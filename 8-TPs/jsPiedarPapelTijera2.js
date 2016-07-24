@@ -43,7 +43,7 @@ function piedra()
 				ContadorDeGanadas++;
 
 			}
-	mostarResultado();
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 function papel()
 {
@@ -65,7 +65,7 @@ function papel()
 				alert("Perdiste");
 				ContadorDePerdidas++;
 			}	
-	mostarResultado();
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
@@ -87,9 +87,9 @@ function tijera()
 				alert("Empate");
 				ContadorDeEmpates++;
 			}		
-	mostarResultado();
+	mostrarResultado();
 }//FIN DE LA FUNCIÓN
-function mostarResultado()
+function mostrarResultado()
 {
 	document.getElementById('empatadas').value=ContadorDeEmpates + " partidas empatadas.";
 	document.getElementById('perdidas').value=ContadorDePerdidas + " partidas perdidas.";
