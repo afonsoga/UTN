@@ -9,5 +9,43 @@ e.	Se pedirán un número positivo y se mostrará la cantidad de números Primos
 */
 function ComenzarIngreso () 
 {
- 	
+ 	var numero;
+ 	var pares;
+ 	var impares;
+ 	var divisibles;
+ 	var contadorDivisibles;
+ 	var verificarPrimo;
+ 	var primos;
+ 	var contadorPrimos;
+}
+
+
+ 	numero=parseInt(document.getElementById('numero')).value;
+ 	while(numero<0)
+ 	{
+ 		numero=parseInt(document.getElementById('numero')).value;
+ 	}
+
+
+ 	while(numero>0)
+ 	{
+ 		if (numero%2==0)
+		{
+			alert(pares++);
+			numero--;
+		}
+ 	}
+
+
+ 	while(numero>0)
+ 	{
+ 		if (numero%2==1)
+		{
+			alert(impares++);
+			numero--;
+		}
+ 	}
+
+
+
 }
