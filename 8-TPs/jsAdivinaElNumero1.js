@@ -15,14 +15,14 @@ function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
 	numeroSecreto = Math.floor((Math.random()*(101-1))+1);
-	alert(numeroSecreto );
+	//alert(numeroSecreto );
 }
 
 function verificar()
 {
 	numero=document.getElementById('numero').value;
 
-	if (isNaN(numero))
+	if (isNaN(numero) || (numero==""))
 		{
 			alert("Debes ingresar un numero");
 		}

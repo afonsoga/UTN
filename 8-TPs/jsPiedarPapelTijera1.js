@@ -12,11 +12,11 @@ function comenzar()
 
 	switch(eleccionMaquina)
 	{
-		case 1: "piedra";
+		case 1: eleccionMaquina="piedra";
 		break;
-		case 2: "papel";
+		case 2: eleccionMaquina="papel";
 		break;
-		case 3: "tijera";
+		case 3: eleccionMaquina="tijera";
 		break;
 	default:
 	}
@@ -25,11 +25,12 @@ function comenzar()
 //FIN DE LA FUNCIÓN
 function piedra()
 {
-	var eleccionHumano="piedra";
-
 	comenzar()
+	alert("La máquina seleccionó "+eleccionMaquina);
+	var eleccionHumano="piedra";
+	
 
-		if (eleccionHumano==eleccionMaquina)
+		if (eleccionMaquina==eleccionHumano)
 			{
 				alert("Empate");
 			}
@@ -42,9 +43,10 @@ function piedra()
 }//FIN DE LA FUNCIÓN
 function papel()
 {
-	var eleccionHumano="papel";
-
 	comenzar()
+	alert("La máquina seleccionó "+eleccionMaquina);
+	var eleccionHumano="papel";
+	
 
 		if (eleccionMaquina=="piedra")
 			{
@@ -59,9 +61,10 @@ function papel()
 }//FIN DE LA FUNCIÓN
 function tijera()
 {
-	var eleccionHumano="tijera";
-
 	comenzar()
+	alert("La máquina seleccionó "+eleccionMaquina);
+	var eleccionHumano="tijera";
+	
 
 		if (eleccionMaquina=="piedra")
 			{
